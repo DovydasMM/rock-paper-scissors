@@ -13,6 +13,10 @@ function computerSelect() {
 function playerSelect() {
    let playerStance = prompt("What is your stance?");
    playerStance = playerStance.charAt(0).toUpperCase()+playerStance.slice(1).toLowerCase();
+   if (playerStance != "Rock" && playerStance != "Paper" && playerStance != "Scissors") {
+       alert("Wrong type!");
+       playerSelect();
+   }
    return playerStance;
     }
 
