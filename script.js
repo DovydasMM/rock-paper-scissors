@@ -10,9 +10,10 @@ function computerPlay() {
     }
     return computerSelection;
 }
-computerPlay();
-console.log(computerPlay());
-
 function playerSelect() {
+    let playerStance = prompt("What is your stance?");
+    playerStance = playerStance.charAt(0).toUpperCase()+playerStance.slice(1).toLowerCase();
+    return playerStance;
+    }
 
-}
+
