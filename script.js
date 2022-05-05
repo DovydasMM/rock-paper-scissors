@@ -76,7 +76,7 @@ if (playerPoints > computerPoints){
 } else if (computerPoints > playerPoints){
     console.log("Booo! You lost. You only had " + playerPoints +" wins, while the Computer had " + computerPoints + " wins in the end.")
 } else if (computerPoints == playerPoints){
-    console.log("It's a draw. You both had" + playerPoints + "wins.")
+    console.log("It's a draw. You both had " + playerPoints + " wins.")
 }
 }
 game();
