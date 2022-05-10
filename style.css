@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(110, 186, 216);
+    text-align: center;
+    flex-grow: 0;
+}
+.buttons{
+display:flex;
+gap: 16px;
+justify-content: center;
+}
+
+.rock, .paper,.scissors{
+    background-color: red;
+}
