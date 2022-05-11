@@ -14,7 +14,7 @@ function playRound() {
     let computerChoice = computerSelect();
     let playerChoice = playerStance;
     let roundWinner;
-        // computer Paper
+        /// computer Paper
         if (computerChoice == "Paper" && playerChoice=="Rock") {
             //const showWinner = document.createElement('div');
             //showWinner.textContent = "You Lose! Paper beats Rock!";
