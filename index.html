@@ -8,13 +8,22 @@
 <body>
     <script src="script.js" defer></script>
     <div class="buttons">
-    <button class="rock">Rock</button>
-      <button class="paper">Paper</button>
-      <button class="scissors">Scissors</button>
+      <img class="rock" src="images/Rock.png">
+      <img class="paper" src="images/Paper.png">
+      <img class="scissors" src="images/Scissors.png">
     </div>
       <div id = "container">
-        <div class = "score"> Player score is: 0. Computer score is: 0</div>
+        <div class = "score"></div>
       </div>
-      <button class="reload">Press this for a restart</button>
+      <div class ="scorePlaces">
+        <div class="playerScoreHere">0</div>
+        <div class="computerScoreHere">0</div>
+      </div>
+      <div id ="winner">
+        <div class= "game-winner"></div>
+        </div>
+      <div class="bottom">
+      <button class="reload">Try again</button>
+      </div>
 </body>
 </html>

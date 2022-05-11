@@ -77,22 +77,24 @@ btnRock.addEventListener('click',()=> {
     } else if (roundWinner == "Computer") {
         computerScore +=1;
     }
-    const showRoundWinner = document.createElement('div');
-    showRoundWinner.textContent = "Player score is: "+ playerScore +". Computer score is: "+computerScore ;
-    container.appendChild(showRoundWinner);
-    container.children[0].remove();
+    const playerScoreHere = document.querySelector('.playerScoreHere');
+    playerScoreHere.textContent = playerScore;
+    
+    const computerScoreHere = document.querySelector('.computerScoreHere');
+    computerScoreHere.textContent = computerScore;
 
     if (playerScore ==  5 ){
-        const showWinner = document.createElement('div');
-        showWinner.textContent = "Player wins!! Congratulations! Player score is: "+ playerScore +". Computer score is: "+computerScore;
-        container.appendChild(showWinner);
-        container.children[0].remove(); 
+        const gameWinner = document.querySelector('.game-winner');
+        winner.children[0].remove(); 
+        gameWinner.textContent = "Player wins!!"
+        winner.appendChild(gameWinner);
+        
     } 
     else if (computerScore == 5){
-        const showWinner = document.createElement('div');
-        showWinner.textContent = "Computer wins, better luck next time... Player score is: "+ playerScore +". Computer score is: "+computerScore;
-        container.appendChild(showWinner); 
-        container.children[0].remove();
+        const gameWinner = document.querySelector('.game-winner');
+        gameWinner.textContent = "Computer wins"
+        winner.children[0].remove(); 
+        winner.appendChild(gameWinner);
     }
 });
 const btnPaper = document.querySelector('.paper');
@@ -104,29 +106,25 @@ btnPaper.addEventListener('click',()=> {
     } else if (roundWinner == "Computer") {
         computerScore +=1;
     }
-    const showRoundWinner = document.createElement('div');
-    showRoundWinner.textContent = "Player score is: "+ playerScore +". Computer score is: "+computerScore ;
-    container.appendChild(showRoundWinner); 
-    container.children[0].remove();
+
+    const playerScoreHere = document.querySelector('.playerScoreHere');
+    playerScoreHere.textContent = playerScore;
+    
+    const computerScoreHere = document.querySelector('.computerScoreHere');
+    computerScoreHere.textContent = computerScore;
+
     if (playerScore ==  5 ){
-        const showWinner = document.createElement('div');
+        const gameWinner = document.querySelector('.game-winner');
+        winner.children[0].remove(); 
+        gameWinner.textContent = "Player wins!!"
+        winner.appendChild(gameWinner);
         
-        showWinner.textContent = "Player wins!! Congratulations! Player score is: "+ playerScore +". Computer score is: "+computerScore;
-        container.appendChild(showWinner); 
-        container.children[0].remove();
     } 
     else if (computerScore == 5){
-        const showWinner = document.createElement('div');
-        
-        showWinner.textContent = "Computer wins, better luck next time... Player score is: "+ playerScore +". Computer score is: "+computerScore;
-        container.appendChild(showWinner); 
-        container.children[0].remove();
-    }
-    
-    if (playerScore ==  5 ){
-        console.log("Player wins the whole game!");
-    } else if (computerScore ==5){
-        console.log("Computer wins the whole game!")
+        const gameWinner = document.querySelector('.game-winner');
+        gameWinner.textContent = "Computer wins"
+        winner.children[0].remove(); 
+        winner.appendChild(gameWinner);
     }
 });
 const btnScissors = document.querySelector('.scissors');
@@ -138,22 +136,24 @@ btnScissors.addEventListener('click',()=> {
     } else if (roundWinner == "Computer") {
         computerScore +=1;
     }
-    const showRoundWinner = document.createElement('div');
-    showRoundWinner.textContent = "Player score is: "+ playerScore +". Computer score is: "+computerScore ;
-    container.appendChild(showRoundWinner); 
-    container.children[0].remove();
+    const playerScoreHere = document.querySelector('.playerScoreHere');
+    playerScoreHere.textContent = playerScore;
     
-    if (playerScore ==  5 ){
-        const showWinner = document.createElement('div');
-        showWinner.textContent = "Player wins!! Congratulations! Player score is: "+ playerScore +". Computer score is: "+computerScore;
-        container.appendChild(showWinner); 
-        container.children[0].remove();
+    const computerScoreHere = document.querySelector('.computerScoreHere');
+    computerScoreHere.textContent = computerScore;
+    
+    if (playerScore ==  5){
+        const gameWinner = document.querySelector('.game-winner');
+        winner.children[0].remove(); 
+        gameWinner.textContent = "Player wins!!"
+        winner.appendChild(gameWinner);
+        
     } 
     else if (computerScore == 5){
-        const showWinner = document.createElement('div');
-        showWinner.textContent = "Computer wins, better luck next time... Player score is: "+ playerScore +". Computer score is: "+computerScore;
-        container.appendChild(showWinner); 
-        container.children[0].remove();
+        const gameWinner = document.querySelector('.game-winner');
+        gameWinner.textContent = "Computer wins"
+        winner.children[0].remove(); 
+        winner.appendChild(gameWinner);
     }
 });
 }

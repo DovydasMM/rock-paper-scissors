@@ -1,14 +1,83 @@
 body{
-    background-color: rgb(110, 186, 216);
+    background-color: rgb(182, 182, 182);
     text-align: center;
     flex-grow: 0;
 }
 .buttons{
 display:flex;
-gap: 16px;
+gap: 24px;
 justify-content: center;
+margin-top: 256px;
+margin-bottom: 24px;
 }
 
 .rock, .paper,.scissors{
-    background-color: red;
+    background-color: rgb(209, 14, 0);
+    font-family: sans-serif;
+    border-style: solid;
+    border-radius: 1mm;
+    text-align: center;
+    border-color: black;
+    height: 200px;
+    width: auto;
+}
+
+.reload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#winner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.game-winner{
+    background-color: rgb(112, 193, 204);
+    border-style: solid;
+    border-radius: 5%;
+    border-color: rgb(0, 0, 0);
+    height: 64px;
+    width: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+
+.bottom{
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.scorePlaces{
+    display: flex;
+    justify-content: center;
+    gap:128px;
+}
+
+.playerScoreHere, .computerScoreHere{
+    height: 32px;
+    width: 32px;
+    padding: 12px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+}
+
+.reload{
+    padding: 12px;
+    background-color: rgb(14, 141, 226);
+
 }
